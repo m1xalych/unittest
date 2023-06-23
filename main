@@ -1,2 +1,13 @@
 def distance(v, t):
     return v * t
+import unittest
+from main import distance
+class test_distance(unittest.TestCase):
+    def test_1(self):
+        self.assertEqual(distance(5, 2), 10)
+    def test_2(self):
+        self.assertEqual(distance(10,4),40)
+    def test_3(self):
+        self.assertEqual(distance(10,0),0)
+if __name__ == '__main__':
+    unittest.main()
