@@ -1,0 +1,2 @@
+def distance(v, t):
+    return v * t
